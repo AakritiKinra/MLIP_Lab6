@@ -23,7 +23,7 @@ pipeline {
                 # Run pytest
                 pytest
                 # Deactivate the virtual environment
-                source venv/bin/deactivate
+                deactivate
                 '''
             }
         }
