@@ -14,6 +14,7 @@ pipeline {
                 sh '''#!/bin/bash
                 echo 'Test Step: We run testing tool like pytest here'
                 # Activate the virtual environment
+                python -m venv venv
                 source venv/bin/activate
                 pip install numpy
                 pip install pandas
