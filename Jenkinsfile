@@ -14,12 +14,12 @@ pipeline {
                 sh '''#!/bin/bash
                 echo 'Test Step: We run testing tool like pytest here'
                 # Activate the virtual environment
-                python -m venv venv
+                python3 -m venv venv
                 source venv/bin/activate
-                pip install numpy
-                pip install pandas
-                pip install pytest
-                pip install scikit-learn
+                pip3 install numpy
+                pip3 install pandas
+                pip3 install pytest
+                pip3 install scikit-learn
                 # Run pytest
                 pytest
                 # Deactivate the virtual environment
